@@ -1,0 +1,127 @@
+.page-footer {
+
+	&__wrapper {
+		background-color: #fdfdfd;
+		color: #000000;
+		display: flex;
+		margin: auto;
+		text-align: center;
+	}
+
+	&__hashtag {
+		margin: 0;
+		padding: 50px 0;
+		font-weight: bold;
+	}
+
+	&__copyright {
+		display: flex;
+		margin: auto;
+		min-height: 40px;
+		font-size: 14px;
+
+		&-text {
+		    padding-right: 7px;
+		    padding-top: 10px;
+		}
+
+		&-link {
+			background: url(../img/logo-htmlacademy.png) no-repeat center;
+
+			&:hover {
+				background: url(../img/logo-htmlacademy-hover.png) no-repeat center;
+			}
+
+			&:active {
+				background: url(../img/logo-htmlacademy-down.png) no-repeat center;
+			}
+		}
+	}
+}
+
+
+
+@media #{$mobil-width-only} {
+
+	.page-footer {
+
+		&__wrapper {
+			flex-direction: column;
+			min-height: 240px;
+			margin: auto;
+			text-align: center;
+		}
+
+		&__hashtag {
+			font-size: 21px;
+		}
+
+		&__copyright {
+			height: 35px;
+			padding-top: 35px;
+			padding-bottom: 30px;
+
+			&-text {
+   				padding-right: 7px;
+   				padding-top: 5px;
+			}
+
+			&-link {
+				height: 35px;
+				width: 105px;
+				background-size: cover;
+
+				&:hover {
+					background-size: cover;
+				}
+
+				&:active {
+					background-size: cover;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media #{$tablet-width} {
+
+	.page-footer {
+
+		&__wrapper {
+			width: 100%;
+			flex-direction: row;
+			min-height: 119px;
+		}
+
+		&__hashtag {
+			max-width: 33%;
+    		flex: 0 0 33.33%;
+		}
+
+		&__social {
+			max-width: 33%;
+    		flex: 0 0 33.33%;
+		}
+
+		&__copyright {
+			max-width: 33%;
+    		flex: 0 0 33.33%;
+
+			&-link {
+				height: 40px;
+				width: 115px;
+				background-size: cover;
+
+				&:hover {
+					background-size: cover;
+				}
+
+				&:active {
+					background-size: cover;
+				}
+			}
+		}
+	}
+}

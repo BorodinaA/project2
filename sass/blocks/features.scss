@@ -1,0 +1,118 @@
+.features {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.feature {
+
+	&__title {
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 21px;
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 200;
+		line-height: 21px;
+	}
+}
+
+
+@media #{$mobil-width-only} {
+	.features {
+		flex-direction: column;
+		margin: 0 auto;
+		padding: 20px 0;
+		max-height: 380px;
+		padding-left: 20px;
+		padding-right: 40px;
+	}	
+
+	.feature {
+		display: flex;
+		flex-direction: row;
+
+		p {
+			padding: 0;
+			margin: 0;
+			padding-bottom: 20px;
+		}
+
+		&__title {
+			margin: 0;
+			padding: 0;
+			padding-top: 15px;
+			padding-bottom: 20px;
+		}
+
+		&__icon {
+			padding-right: 15px;
+
+			&-apartments {
+				width: 35px;
+				height: 36px;
+			}
+
+			&-eat {
+				width: 35px;
+				height: 35px;
+			}
+
+			&-present {
+				width: 35px;
+				height: 44px;
+			}
+		}
+	}
+}
+
+
+
+@media #{$tablet-width} {
+	.feature {
+		display: flex;
+		flex-direction: column;
+		max-width: 33%;
+		max-height: 330px;
+		flex: 0 0 33.3%;
+		text-align: center;
+		padding-top: 56px;
+		padding-bottom: 80px;
+
+		p {
+			margin: 0;
+			padding:0 45px;
+		}
+			
+
+		&__icon{
+			margin: 0 auto;
+
+			&-apartments {
+				width: 77px;
+				height: 78px;
+			}
+
+			&-eat {
+				width: 75px;
+				height: 78px;
+			}
+			
+			&-present {
+				width: 64px;
+				height: 78px;
+			}
+		}
+
+		&__title {
+			margin: 0;
+			padding: 0;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+}
+

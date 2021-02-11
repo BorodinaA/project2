@@ -1,0 +1,32 @@
+.map {
+	margin: auto;
+	width: 100%;
+	
+
+	&::before {
+		content: "";
+		background: url(../img/map.png) no-repeat center;
+	}
+
+	&__source {
+		width: 100%;
+	}
+	
+}
+
+
+@media #{$mobil-width-only} {
+	.map {
+		min-height: 350px;
+
+		&__source {
+			min-height: 350px;
+		}
+	}
+}
+
+@media #{$tablet-width} {
+	.map__source {
+		min-height: 473px;
+	}
+}

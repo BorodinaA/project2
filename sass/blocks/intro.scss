@@ -1,0 +1,61 @@
+@media #{$mobil-width-only} {
+	.intro {
+		min-height: 387px;
+		background: url(../img/bg-header.png) no-repeat center;
+		background-size: cover;
+		position: relative;
+
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			bottom: -1px;
+			z-index: 9;
+			width: 100%;
+			min-height: 57px;
+
+			background: url(../img/triangle_desktop.png) no-repeat bottom;
+			background-size: cover;
+		}
+
+		&__image {
+			display: block;
+			width: 284px;
+			height: 216px;
+			padding-top: 90px;
+			padding-bottom: 80px;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+@media #{$tablet-width} {
+	.intro {
+		background: url(../img/bg-header.png) no-repeat center;
+		background-size: cover;
+		position: relative;
+
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			bottom: -1px;
+			z-index: 9;
+			width: 100%;
+			min-height: 57px;
+
+			background: url(../img/triangle_desktop.png) no-repeat bottom;
+			background-size: cover;
+		}
+
+		&__image {
+			display: block;
+			width: 459px;
+			height: 351px;
+			padding-top: 76px;
+			padding-bottom: 86px;
+			margin: 0 auto;
+		}
+	}
+}
